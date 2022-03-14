@@ -1,0 +1,5 @@
+vempyre_vampire;Vampire;Vampire;Vampire;;Vampire;;;;;;;;;x
+vempyre_vampire_desc;Caught vampiric disease, you might need blood to satisfy your thirst;;;;;;;;;;;;;x
+
+suck_blood;Suck Blood;;;;;;;;;;;;;x
+suck_blood_desc;Suck [This.GetFirstName] blood and grant them vampiric power;;;;;;;;;;;;;x

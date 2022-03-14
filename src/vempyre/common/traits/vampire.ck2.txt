@@ -1,0 +1,54 @@
+vempyre_vampire = {
+
+    # Visible with other with same trait
+    same_trait_visibility = yes
+
+    # Dont give it to random people
+    random = no
+
+    # Prevent selectable in create character
+    customizer = no
+
+    ### MODIFIERS ###
+
+    # Vampire are looks beautiful
+    sex_appeal_opinion = 10
+
+    # They are also good at intrigue
+    intrigue = 15
+
+    # They are also has increased power
+    martial = 3
+
+    # if mother is vampire, make the child vampire too
+    enatic = yes
+
+    # Other vampire bit like you
+    same_opinion = 5
+}
+
+vempyre_vampire_lord = {
+
+    # Visible with other with same trait
+    same_trait_visibility = yes
+
+    # Dont give it to random people
+    random = no
+
+    # Prevent selectable in create character
+    customizer = no
+
+    ### MODIFIERS ###
+
+    # Vampire are looks beautiful
+    sex_appeal_opinion = 30
+
+    # They are also good at intrigue
+    intrigue = 30
+
+    # They are also has increased power
+    martial = 10
+
+    # Other vampire bit like you
+    same_opinion = 5
+}

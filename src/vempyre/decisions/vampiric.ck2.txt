@@ -1,0 +1,29 @@
+targetted_decisions = {
+
+    suck_blood = {
+
+        filter = all
+
+        from_potential = {
+            ai = no
+            trait = vempyre_vampire
+        }
+
+        potential = {
+            age > 12
+            is_pregnant = no
+        }
+
+        allow = {
+            # You cannot suck blood when pregnant
+            is_pregnant = no
+
+            # always = yes
+        }
+
+        effect = {
+            add_trait = vempyre_vampire
+        }
+    }
+
+}

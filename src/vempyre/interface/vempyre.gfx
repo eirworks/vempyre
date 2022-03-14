@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trait_vempyre_vampire"
+		texturefile = "gfx/traits/ck2_vampire_icon.tga"
+	}
+}
