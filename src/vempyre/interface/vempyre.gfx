@@ -3,4 +3,9 @@ spriteTypes = {
 		name = "GFX_trait_vempyre_vampire"
 		texturefile = "gfx/traits/ck2_vampire_icon.tga"
 	}
+	
+	spriteType = {
+		name = "GFX_decision_vempyre_blood_potion"
+		texturefile = "gfx/traits/ck2_vampire_icon.tga"
+	}
 }

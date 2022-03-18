@@ -1,0 +1,15 @@
+vempyreEVT.1;My courtier reported that the black market currently hold a mysterious potion that could prolong one's life. By [This.GetHighGodName], I don't believe it!;;;;;;;;;;;;;x
+vempyreEVTOPT.1;Investigate it!;;;;;;;;;;;;;x
+vempyreEVT.2;Courtier informed me that the potion called Blood Potion is indeed exists and offered at really high price.;;;;;;;;;;;;;x
+vempyreEVTOPT.2.A;Bribe auctioneer to get it!;;;;;;;;;;;;;x
+vempyreEVTOPT.2.B;Buy it immediatelly!;;;;;;;;;;;;;x
+vempyreEVTOPT.2.C;Don't buy it!;;;;;;;;;;;;;x
+vempyreEVT.3;I managed to get Blood Potion. It doesn't look like blood, other than its colour. Should I drink it?;;;;;;;;;;;;;x
+vempyreEVTOPT.3.A;I spent a lot for this, drink it!;;;;;;;;;;;;;x
+vempyreEVTOPT.3.B;Looks haram! Throw it away!!;;;;;;;;;;;;;x
+vempyreEVT.4;I became very sickly after I drink it. Perhaps it was poison. My physician won't able to cure me. Another day goes by and made me look paler than usual.;;;;;;;;;;;;;x
+vempyreEVTOPT.4.A;Endure it!;;;;;;;;;;;;;x
+vempyreEVT.5;I was able to endure my illness. Now I've regained my health and I think there is something changed in my body.;;;;;;;;;;;;;x
+vempyreEVTOPT.5.A;Don't think much about it!;;;;;;;;;;;;;x
+vempyreEVT.6;As I watched the changes in my body, it hit me hard that I has turned into Blood-sucker. Despite my look, I... felt so powerful!;;;;;;;;;;;;;x
+vempyreEVTOPT.6.A;I turned into Vampire!;;;;;;;;;;;;;x

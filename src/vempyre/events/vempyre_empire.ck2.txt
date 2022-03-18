@@ -1,0 +1,21 @@
+namespace = vempyre
+
+# Legend of the Blood Sucker in Islamic world.
+narrative_event = {
+    id = vempyre.1001
+    desc = vempyreEVT.1001
+
+    # Fast trigger
+    has_dlc = "The Sword of Islam"
+    religion_group = islam
+
+    trigger = {
+        year >= 800
+        ai = no
+    }
+    option = {
+        name = vempyreEOPT.1001.A
+
+        set_global_flag = vampire_exists
+    }
+}

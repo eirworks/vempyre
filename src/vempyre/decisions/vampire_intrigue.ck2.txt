@@ -1,0 +1,33 @@
+decisions = {
+    vempyre_blood_potion = {
+        potential = {
+            ai = no
+            religion_group = islam
+            age > 18
+            NOT = {
+                has_character_flag = vempyre_found_blood_pot
+            }
+        }
+
+        allow = {
+            age >= 18
+            # always = yes
+        }
+
+        effect = {
+            character_event = {
+                id = vempyre.1
+                days = 2
+            }
+            set_character_flag = vempyre_found_blood_pot
+        }
+
+        revoke_allowed = {
+			always = no
+		}
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

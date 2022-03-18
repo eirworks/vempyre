@@ -1,0 +1,160 @@
+namespace = vempyre
+
+########################################
+# The Blood Potion
+# Mysterious blood potion appeared in the black market
+# auction that said to be able to prolong one's life.
+# 
+
+# We heard about this mysterious potion
+character_event = {
+    id = vempyre.1
+    desc = vempyreEVT.1
+
+    # Only called via Intrigue decision
+    is_triggered_only = yes
+    
+    option = {
+        # Investigate
+        name = vempyreEVTOPT.1
+
+        character_event = {
+            id = vempyre.2
+            days = 14
+        }
+    }
+}
+
+# Courtier informed that Blood Potion indeed exists
+# and currently being auctioned in the black market.
+character_event = {
+    id = vempyre.2
+    desc = vempyreEVT.2
+
+    is_triggered_only = yes
+     
+    # Bribe the auctioneer to get it cheaper and faster. Need
+    # higher intrigue
+    option = {
+        name = vempyreEVTOPT.2.A
+
+        trigger = {
+            intrigue > 20
+        }
+
+        wealth = -75
+
+        character_event = {
+            id = vempyre.3
+            days = 30
+        }
+    }
+
+    # Buy it with lot of cash and it will took time
+    option = {
+        name = vempyreEVTOPT.2.B
+
+        wealth = -200
+
+        character_event = {
+            id = vempyreEVT.3
+            days = 90
+        }
+    }
+
+    # Don't buy it, let the intrigue appear again
+    option = {
+        name = vempyreEVTOPT.2.C
+
+        clr_character_flag = vempyre_found_blood_pot
+    }
+}
+
+# Courtier successfully got the Blood Potion.
+# Should we drink it?
+character_event = {
+    id = vempyre.3
+    desc = vempyreEVT.3
+
+    is_triggered_only = yes
+
+    # Drink it
+    # Become sick with vampiric illness
+    option = {
+        name = vempyreEVTOPT.3.A
+
+        character_event = {
+            id = vempyre.4
+            days = 30
+        }
+    }
+    
+    # Don't drink, throw it
+    # But it will notify people who want it
+    option = {
+        name = vempyreEVTOPT.3.B
+
+        clr_character_flag = vempyre_found_blood_pot
+
+        piety = 50
+    }
+}
+
+# I become very sickly. Unable to bear child. My face turn paler.
+character_event = {
+    id = vempyre.4
+    desc = vempyreEVT.4
+
+    is_triggered_only = yes
+
+    immediate = {
+        add_trait = illness
+    }
+
+    # Endure it
+    option = {
+        name = vempyreEVTOPT.4.A
+
+        character_event = {
+            id = vempyre.5
+            days = 30
+        }
+    }
+}
+
+# I was able to endure my illness and some kind of strange things
+# happening in my body. 
+character_event = {
+    id = vempyre.5
+    desc = vempyreEVT.5
+
+    is_triggered_only = yes
+
+    # Don't think about it
+    option = {
+        name = vempyreEVTOPT.5.A
+
+        character_event = {
+            id = vempyre.6
+            days = 30
+        }
+    }
+}
+
+
+# I turned into Vampire
+character_event = {
+    id = vempyre.6
+    desc = vempyreEVT.6
+
+    is_triggered_only = yes
+
+    # So be it
+    option = {
+        name = vempyreEVTOPT.6.A
+        
+
+        remove_trait = illness
+        add_trait = vempyre_vampire
+    }
+}
